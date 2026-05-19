@@ -1,0 +1,21 @@
+{
+  "name": "javascripttest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "start": "node script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanna566/JavaScript_Test_Projekt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hanna566/JavaScript_Test_Projekt/issues"
+  },
+  "homepage": "https://github.com/hanna566/JavaScript_Test_Projekt#readme"
+}
