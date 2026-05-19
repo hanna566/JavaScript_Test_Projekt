@@ -15,17 +15,25 @@ h1{
     padding-top: 50px;
 }
 
+.eingabe{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 550px;
+    height: 50px;
+    width: 500px;
+}
 .input{
     height: 50px;
-    width: 300px;
+    width: 500px;
     border-radius: 5px;
-    margin: 10px;
+    padding: 10px;
+    background-color: white;
 }
 
 .board{
     display: flex;
     float: inline;
-    margin: 50px;
+    padding: 50px;
 }
 
 .number{
@@ -34,7 +42,7 @@ h1{
     height: 250px;
     width: 400px;
     gap: 10px;
-    margin: 10px;
+    padding: 10px;
 }
 
 .zeichen {
@@ -43,6 +51,6 @@ h1{
     height: 250px;
     width: 150px;
     gap: 5px;
-    margin: 10px;
+    padding: 10px;
 }
 
