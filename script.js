@@ -1,8 +1,14 @@
-let x; 
-let y;
+//let x; 
+//let y;
 // const input = document.getElementById("number1");
 // const clickbtn = document.getElementById("btn");
 // const output = document.getElementById("text")
+
+const plus = '+';
+const minus = '-';
+const mal = '*';
+const teil = '/';
+
 
 // Nummern
 const btn1 = document.getElementById("Btn1");
@@ -25,11 +31,66 @@ const Input = document.getElementById("Input");
 const Input1 = document.getElementById("Input1");
 
 
+
+
+function ergebnis() {
+    if (output.includes())
+    {
+        splitadd();
+        add();
+    }
+    else if (output.includes(minus)) 
+    {
+        splitsubstracting();
+        substracting();
+    }
+    else if (output.includes(mal)) 
+    {
+        splitmultiplying();
+        multiplying();
+    }
+    else if (output.includes(teil)) 
+    {
+        splitdividing();
+        dividing();
+    }
+}
+
+function remove(){
+    output = document.getElementById('output').value = "";
+}
+
+function split() {
+    const gesplit = eingabe.split(/([+\-*/])/);
+    const zahl1 = [0]
+}
+
+function splitadd() {
+    const input = output.split('+');
+    const input1 = output.split('=');
+}
+
+function splitsubstracting() {
+    const input = output.split('-');
+    const input1 = output.split('=');
+}
+
+function splitmultiplying() {
+    const input = output.split('*');
+    const input1 = output.split('=');
+}
+
+function splitdividing() {
+    const input = output.split('/');
+    const input1 = output.split('=');
+}
+
+
+// add functions for substracting multiplying and dividing
 function add (input, input1){
     return input + input1 
 }
 
-// add functions for substracting multiplying and dividing
 function substracting (input, input1){
     return input - input1 
 }
@@ -42,49 +103,7 @@ function dividing (input, input1){
     return input / input1 
 }
 
-
-
-function ClickButton1 (){
-    
-    output.innerHTML = "1"
-}
-
-function ClickButton2 (){
-    
-    output.innerHTML = "2"
-}
-
-function ClickButton3 (){
-    
-    output.innerHTML = "3"
-}
-
-function ClickButton4 (){
-    
-    output.innerHTML = "4"
-}
-
-function ClickButton5 (){
-    
-    output.innerHTML = "5"
-}
-
-function ClickButton6 (){
-    
-    output.innerHTML = "6"
-}
-
-function ClickButton7 (){
-    
-    output.innerHTML = "7"
-}
-
-function ClickButton8 (){
-    
-    output.innerHTML = "8"
-}
-
-function ClickButton9 (){
-    
-    output.innerHTML = "9"
+function ClickButton(char) {
+    output = document.getElementById('output');
+    output.value += char; 
 }

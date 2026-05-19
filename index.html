@@ -19,30 +19,29 @@
         <output class="input" id="output" type="number" ClickButton ()>
     </div>
 
-
     <div class="board">
         <div class="zeichen">
-            <button id="plus">+</button>
-            <button id="minus">-</button>
-            <button id="mal">*</button>
-            <button id="teil">/</button>
+            <button id="plus" onclick="ClickButton('+')">+</button>
+            <button id="minus" onclick="ClickButton('-')">-</button>
+            <button id="mal" onclick="ClickButton('*')">*</button>
+            <button id="teil" onclick="ClickButton('/')">/</button>
+            <button id="clear" onclick="remove()">DEL</button>
         </div>
         <div class="number">
-            <Button id="Btn1" onclick="ClickButton1 ()">1</Button>
-            <Button id="Btn2" onclick="ClickButton2 ()">2</Button>
-            <Button id="Btn3" onclick="ClickButton3 ()">3</Button>
-            <Button id="Btn4" onclick="ClickButton4 ()">4</Button>
-            <Button id="Btn5" onclick="ClickButton5 ()">5</Button>
-            <Button id="Btn6" onclick="ClickButton6 ()">6</Button>
-            <Button id="Btn7" onclick="ClickButton7 ()">7</Button>
-            <Button id="Btn8" onclick="ClickButton8 ()">8</Button>
-            <Button id="Btn9" onclick="ClickButton9 ()">9</Button>
+            <Button id="Btn1" onclick="ClickButton('1')">1</Button>
+            <Button id="Btn2" onclick="ClickButton('2')">2</Button>
+            <Button id="Btn3" onclick="ClickButton('3')">3</Button>
+            <Button id="Btn4" onclick="ClickButton('4')">4</Button>
+            <Button id="Btn5" onclick="ClickButton('5')">5</Button>
+            <Button id="Btn6" onclick="ClickButton('6')">6</Button>
+            <Button id="Btn7" onclick="ClickButton('7')">7</Button>
+            <Button id="Btn8" onclick="ClickButton('8')">8</Button>
+            <Button id="Btn9" onclick="ClickButton('9')">9</Button>
+            <button id="Btn0" onclick="ClickButton('0')">0</button>
+            <button id="point" onclick="ClickButton('.')">.</button>
+            <button id="gleich" onclick="ergebnis()">=</button>
         </div>
     </div>
-
-
-
-
 
     <script src="script.js" ></script>
 </body>
