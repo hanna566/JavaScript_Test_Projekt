@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #021C1E;
+    background-color: #004445;
 }
 
 h1{
@@ -24,9 +24,9 @@ h1{
     padding-left: 35%;
     padding-top: 40px;
 }
-.output{
+.onput{
     height: 50px;
-    width: 500px;
+    width: 550px;
     border-radius: 5px;
     padding: 10px;
     background-color: white;
@@ -36,7 +36,7 @@ h1{
     display: flex;
     float: inline;
     padding: 50px;
-    padding-left: 33.5%;
+    padding-left: 35%;
 }
 
 .number{

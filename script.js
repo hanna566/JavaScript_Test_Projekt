@@ -4,7 +4,6 @@
 // const clickbtn = document.getElementById("btn");
 // const output = document.getElementById("text")
 
-
 // Nummern
 const btn1 = document.getElementById("Btn1");
 const btn2 = document.getElementById("Btn2");
@@ -25,30 +24,22 @@ const zteil = document.getElementById("teil");
 const zpoint = document.getElementById("point");
 const zgleich = document.getElementById("gleich");
 
-const Output = document.getElementById("output");
+const Output = document.getElementById("output").value;
 
-function remove(){
+function ClickButton(char, Output) {
+    Output = document.getElementById('output');
+    Output.value += char; 
+}
+
+function remove(Output){
     Output = document.getElementById('output').value = "";
 }
-
-function split() {
-    const gesplit = eingabe.split(/([+\-*/])/);
-    return gesplit
-}
-
-
-    const zahl1 = [0];
-    const ziff1 = [1];
-    const zahl2 = [2];
-
-
 // add functions for substracting multiplying and dividing
-function add (zahl1, zahl2){
-    Output = document.getElementById('output')(zahl1 +  zahl2)
-}
+
 
 function substracting (zahl1, zahl2){
-    return zahl1 - zahl2 
+    erg = zahl1 - zahl2; 
+    return erg
 }
 
 function multiplying (zahl1, zahl2){
@@ -58,27 +49,41 @@ function multiplying (zahl1, zahl2){
 function dividing (zahl1, zahl2){
     return zahl1 / zahl2 
 }
+console.log()
 
-function ergebnis() {
-    switch (ziff1) {
-        case '+':
-        add(zahl1, zahl2);
-        break;
-        case '-':
-        substracting(zahl1, zahl2);
-        break;
-        case '*':
-        multiplying(zahl1, zahl2);
-        break;
-        case '/':
-        dividing(zahl1, zahl2);
-        break;
-        default:
-         // Irgentwas
+function split() {
+    const gesplit = Output.split(/([+\-*/])/);
+    const zahl1 = [0];
+    const ziff1 = [1];
+    const zahl2 = [2];
+
+    console.log("Original:", Output);
+    console.log(gesplit);
+
+    /*function ergebnis(ziff1, zahl1, zahl2) {
+        switch (ziff1) {
+            case '+':
+                function add (zahl1, zahl2, Output){
+                Output = document.getElementById('output').innerHTML = zahl1 + zahl2;
+                const erg = zahl1 + zahl2;
+                }
+                console.log(erg)
+            break;
+            case '-':
+            substracting(zahl1, zahl2);
+            break;
+            case '*':
+            multiplying(zahl1, zahl2);
+            break;
+            case '/':
+            dividing(zahl1, zahl2);
+            break;
+            default:
+                console.log(gesplit)
+            // Irgentwas
         }
+    }*/
 }
 
-function ClickButton(char) {
-    Output = document.getElementById('output');
-    Output.value += char; 
-}
+
+
